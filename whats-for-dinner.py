@@ -4,7 +4,6 @@ import random, re, json, os, sys, getopt
 from urllib.request import urlopen
 
 # Keep track of chosen dinners.
-chosenDinners = []
 debug = False
 source = ''
 weekdays = [
