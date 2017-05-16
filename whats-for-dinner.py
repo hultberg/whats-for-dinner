@@ -85,6 +85,7 @@ if __name__ == '__main__':
 
     if len(source) < 1:
         print("Missing source.")
+        usage()
         sys.exit(1)
 
     dinners = get_dinners(source=source)
