@@ -15,8 +15,6 @@ weekdays = [
     "Saturday",
     "Sunday"
 ]
-minDays = 1
-maxDays = len(weekdays)
 
 
 ##
@@ -50,7 +48,7 @@ def get_dinner_for_day(dinners, day):
     # This might hang forever if no dinners are ever found.
     while True:
         try:
-            return dinners[random.randint(minDays, maxDays)]
+            return dinners[random.randint(1, len(dinners))]
         except IndexError:
             pass
 
