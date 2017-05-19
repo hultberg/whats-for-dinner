@@ -10,7 +10,7 @@ weekdays = [
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Thuesday",
+    "Thursday",
     "Friday",
     "Saturday",
     "Sunday"
