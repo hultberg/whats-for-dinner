@@ -48,8 +48,9 @@ def get_dinner_for_day(dinners, day):
     # This might hang forever if no dinners are ever found.
     while True:
         try:
-            return dinners[random.randint(1, len(dinners))]
-        except IndexError:
+            key = random.randint(1, len(dinners))
+            return dinners.pop(key)
+        except KeyError:
             pass
 
     return None
